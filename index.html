@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>Frontend Mentor | Todo app</title>
+  </head>
+  <body>
+    <form id="form">
+      <header class="dark-bg">
+        <div class="title">
+          <h2 class="item-title">ToDo</h2>
+          <span id="theme">
+            <img
+              src="./images/icon-sun.svg"
+              alt="sun"
+              class="sun-img"
+              id="theme-icon"
+            />
+          </span>
+        </div>
+        <div class="item-input">
+          <span class="circle circle-icon-input"></span>
+          <!-- creating an item -->
+          <input
+            type="text"
+            class="input-todo"
+            placeholder="create a new todo"
+            id="todo-input"
+          />
+        </div>
+      </header>
+    </form>
+    <!-- list -->
+    <div class="item-content">
+      <div class="item-footer">
+        <div class="item-footer-content">
+          <button class="btn-footer" id="items-Length">items left</button>
+          <button class="btn-footer" id="all">all</button>
+          <button class="btn-footer" id="active">active</button>
+          <button class="btn-footer" id="completed">completed</button>
+          <button class="btn-footer" id="clearAll">clear items</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
